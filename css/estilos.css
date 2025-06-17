@@ -1,0 +1,322 @@
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fefaf6;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  color: #456b64;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+.header {
+  background-color: #89c9b8;
+  color: white;
+}
+.header .header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem 0;
+}
+.header .header-container h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+.header .header-container nav {
+  margin-top: 1rem;
+}
+.header .header-container nav .nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header .header-container nav .nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+.header .header-container nav .nav-list li a:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: #89c9b8;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.grid-perros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+button {
+  background-color: #456b64;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: rgb(49.0056818182, 75.9943181818, 71.0227272727);
+}
+
+.grid-perros article {
+  background-color: #f2fdfb;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.grid-perros article:hover {
+  transform: scale(1.03);
+}
+.grid-perros article article img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+.grid-perros article h3 {
+  color: #456b64;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.grid-perros article p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.grid-perros article a {
+  background-color: #456b64;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.grid-perros article a:hover {
+  background-color: rgb(49.0056818182, 75.9943181818, 71.0227272727);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #f2fdfb;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+form input,
+form textarea {
+  padding: 0.7rem;
+  border: 1px solid #89c9b8;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+form button {
+  align-self: flex-end;
+}
+
+.hero img.hero-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.bienvenida,
+.sobre-nosotros {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.bienvenida h2,
+.sobre-nosotros h2 {
+  color: #456b64;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.bienvenida p,
+.sobre-nosotros p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.grid-perros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.grid-perros article {
+  background-color: #f2fdfb;
+  border: 1px solid #89c9b8;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.grid-perros article:hover {
+  transform: translateY(-5px);
+}
+.grid-perros article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.grid-perros article h3 {
+  font-size: 1.2rem;
+  color: #456b64;
+  margin-bottom: 0.5rem;
+}
+.grid-perros article p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.grid-perros article a {
+  background-color: #456b64;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.grid-perros article a:hover {
+  background-color: rgb(49.0056818182, 75.9943181818, 71.0227272727);
+}
+
+.contacto-texto {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  background-color: #f2fdfb;
+  padding: 2rem;
+  border: 1px solid #89c9b8;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+form label {
+  font-weight: bold;
+}
+form input,
+form textarea {
+  padding: 0.5rem;
+  border: 1px solid #89c9b8;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+form button {
+  background-color: #456b64;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+form button:hover {
+  background-color: rgb(49.0056818182, 75.9943181818, 71.0227272727);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container form {
+  margin-top: 1rem;
+}
+
+main section:last-child {
+  margin-bottom: 4rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+.bienvenida,
+.sobre-nosotros {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+.bienvenida h2,
+.sobre-nosotros h2 {
+  color: #456b64;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.bienvenida p,
+.sobre-nosotros p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #333;
+}
+
+/*# sourceMappingURL=estilos.css.map */
