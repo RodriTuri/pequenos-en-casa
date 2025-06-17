@@ -1,0 +1,9 @@
+@use '../utils/variables' as *;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  color: $text-color;
+  font-family: Arial, sans-serif;
+}
